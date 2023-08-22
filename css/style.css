@@ -20,16 +20,44 @@
     background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .logo {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 2rem;
+    width: 22rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     text-decoration: none;
-    color: var(--text-color);
+    color: transparent;
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -22rem 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 1.5s;
 }
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--main-color);
+    z-index: -1;
+   
+}
+
+.logo::before {
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 1.5s;
+}
+
 
 .navbar {
     position: absolute;
@@ -44,10 +72,12 @@
     margin-right: 20px;
     color: var(--text-color);
     font-size: 1.5rem;
+    transition: .5s;
 }
 
 .navbar a:hover {
-    color: var(--main-color);
+    -webkit-text-stroke: .7px var(--main-color);
+    color: transparent;
 }
 
 .home-content {
@@ -121,5 +151,29 @@
     .back-video {
         width: auto;
         height:100%;
+    }
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes homeBgText {
+    0%,10%,100% {
+        background-position: -22rem 0;
+    }
+    65%,85% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorText {
+    0%,10%,100% {
+        width: 0;
+    }
+    65%,78%,85% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%,81% {
+        opacity: 0;
     }
 }
