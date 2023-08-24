@@ -360,14 +360,6 @@ section {
 }
 
 /* Breakpoints*/
-@media (max-widhth: 991px) {
-    .header {
-        padding: 2rem 4%;
-    }
-}
-
-
-
 @media (min-aspect-ratio: 16/9) {
     .back-video {
         width: 100%;
