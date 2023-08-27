@@ -182,6 +182,15 @@ section {
     padding-bottom: 6rem;
 }
 
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    color: var(--main-color);
+}
+
+
 .about-img {
     position: relative;
     width: 15rem;
@@ -360,6 +369,79 @@ section {
 }
 
 /* Breakpoints*/
+@media (max-width: 420px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .about {
+        gap: 1px;
+    }
+
+    .about-img img {
+        width: 65%;
+    }
+
+    .about-img .circle-spin {
+        width: 75%;
+        height: 75%;
+    }
+
+    .about-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .about-content p {
+        font-size: 1.2rem;
+    }
+} 
+
+@media (max-width: 540px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+        
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .about {
+        gap: 1px;
+    }
+
+    .about-img img {
+        width: 65%;
+    }
+
+    .about-img .circle-spin {
+        width: 75%;
+        height: 75%;
+    }
+
+    .about-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .about-content p {
+        font-size: 1.2rem;
+    }
+} 
+
 @media (min-aspect-ratio: 16/9) {
     .back-video {
         width: 100%;
