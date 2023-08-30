@@ -189,9 +189,13 @@ section {
 }
 
 .about-content h3 {
+    font-size: 2em;
     color: var(--main-color);
 }
 
+.about-content p {
+    font-size: 1.4em;
+}
 
 .about-img {
     position: relative;
@@ -393,78 +397,72 @@ section {
 }
 
 /* Breakpoints*/
-@media (max-width: 420px) {
+@media (max-width: 290px) {
+    .home-content h1 {
+        font-size: 1.5rem;
+}
+}
+
+
+@media (max-width: 622px) {
     .home-content h1 {
         font-size: 2rem;
     }
 
-    .logo {
-        font-size: 2rem;
+    .about-img img {
+        width: 70%;
     }
 
-    .navbar{
+    .about-img .circle-spin {
+        width: 80%;
+        height: 80%;
+    }
+
+    .about {
+        gap: 7px;
+    }
+
+    .about-content h3 {
+        font-size: 1.7em;
+    }
+
+    .about-content p {
+        font-size: 1.2em;
+} 
+}
+
+
+@media (max-width:900px) {
+    .home {
+        background-color: var(--second-bg-color-color);
+    }
+
+    .home video {
         display: none;
     }
 
-    .about {
-        gap: 1px;
-    }
-
-    .about-img img {
-        width: 65%;
-    }
-
-    .about-img .circle-spin {
-        width: 75%;
-        height: 75%;
-    }
-
-    .about-content h3 {
-        font-size: 1.6rem;
-    }
-
-    .about-content p {
-        font-size: 1.2rem;
-    }
-} 
-
-@media (max-width: 540px) {
-    .home-content h1 {
-        font-size: 2rem;
-    }
-
     .logo {
-        font-size: 1.6rem;
-        
+        display: none;
     }
 
-    .navbar a {
-        font-size: 1rem;
+    .navbar {
+    display: none;
+}
+}
+
+
+@media (max-width:912px) {
+     .navbar a {
+        font-size: 2rem;
+        margin-top: 6px;
+        font-weight: 500;
         margin-left: 10px;
         margin-right: 10px;
+        -webkit-text-stroke: .7px var(--text-color);
     }
 
-    .about {
-        gap: 1px;
-    }
+}
 
-    .about-img img {
-        width: 65%;
-    }
-
-    .about-img .circle-spin {
-        width: 75%;
-        height: 75%;
-    }
-
-    .about-content h3 {
-        font-size: 1.6rem;
-    }
-
-    .about-content p {
-        font-size: 1.2rem;
-    }
-} 
 
 @media (min-aspect-ratio: 16/9) {
     .back-video {
@@ -481,7 +479,7 @@ section {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .slide-content{
         margin: 0 10px;
     }
@@ -527,3 +525,4 @@ section {
         width: 0;
     }
 }
+
