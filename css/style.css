@@ -405,6 +405,14 @@ section {
 
 
 @media (max-width: 622px) {
+    .home {
+        background-color: var(--second-bg-color-color);
+    }
+
+    .home video {
+        display: none;
+    }
+    
     .home-content h1 {
         font-size: 2rem;
     }
@@ -433,13 +441,6 @@ section {
 
 
 @media (max-width:900px) {
-    .home {
-        background-color: var(--second-bg-color-color);
-    }
-
-    .home video {
-        display: none;
-    }
 
     .logo {
         display: none;
