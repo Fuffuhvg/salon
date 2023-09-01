@@ -6,6 +6,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color:var(--second-bg-color)
+}
 
 :root {
     --text-color:white;
@@ -160,6 +163,7 @@ section {
     padding: 2rem 9%;
     background: transparent;
     display: flex;
+    width: 1fr;
     justify-content: space-between;
     align-items: center;
     z-index:2;
